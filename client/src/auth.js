@@ -1,6 +1,7 @@
 import { getApiUrl } from './utils.js';
 
 let authToken = null;
+let logoutTimer; 
 
 export function setAuthToken(token) {
     authToken = token;
@@ -13,8 +14,6 @@ export function setAuthToken(token) {
 
 export function getAuthToken() {
     return authToken;
-
-    
 }
 
 export function removeAuthToken() {
